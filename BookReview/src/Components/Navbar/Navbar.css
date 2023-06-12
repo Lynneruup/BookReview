@@ -1,38 +1,37 @@
 .navContainer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 0em 30em;
-	background-color: rgba(86, 126, 86, 0.603);
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	height: 90px;
+	background-color:#F4F1EA;;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 8px;
+	height: 60px;
+	font-family: Inter;
+	padding: 0em 5em;;
 }
 
 .navLogo {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	font-size: larger;
 	font-weight: bold;
 }
 
 .navLogo img {
-	width: 70px;
-	height: 55px;
-	margin-right: 10px;
+	width: 192px;
+	height: 37.84px;
+	margin-right: 0px;
 }
 
 .navSearch {
 	display: flex;
-	margin: auto;
+	margin: 0 5em;
 }
-
+	
 .navSearch input {
 	border-radius: 0.25em;
 	padding: 3%;
 	font-size: 14px;
 	font-family: Inter;
-	border: 1px solid black;
+	border: 0.75px solid rgb(133, 133, 133);
 	width: 300px;
 	height: 12px;
 	background-color: aliceblue;
@@ -40,11 +39,12 @@
 	outline: none;
 	box-shadow: none;
 	transition: box-shadow 0.1s;
+	margin: 0 10px;
   }
   
   .navSearch input:focus {
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-	border: 2px solid grey;
+	border: 1px solid rgb(52, 50, 50);
   }
 
 .navAccount {

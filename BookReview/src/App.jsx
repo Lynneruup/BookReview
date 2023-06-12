@@ -1,16 +1,33 @@
 import React from "react";
 import { useState } from 'react';
-import Navbar from "./Components/GrandNavbar/Navbar/Navbar.jsx";
 import './App.css';
 import "./index.css"
-import GrandNavbar from "./Components/GrandNavbar/GrandNavbar.jsx"
+
+
+// React router 
+import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom";
+
+// Layouts
+import RootLayout from "./layouts/RootLayout.jsx";
+
+// Pages
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import Home from "./Components/Home.jsx"
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout/>}>
+      <Route index element={<Home />}></Route>
+      <Route path="About" element={<Navbar />}></Route>
+    </Route>
+  )
+)
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-  <div>
-    <GrandNavbar/>  </div>
+  <RouterProvider router={router} />
   )
 }
 

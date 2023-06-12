@@ -5,7 +5,7 @@ const Navbar = () => {
 
 	return (
 	<div className="navContainer">
-		<div className="navLogo"><img src="/book.png"></img><a>Bøøk</a></div>
+		<div className="navLogo">{<img src="/Logo.png"></img>}{/* <a>BøøkReview</a> */}</div>
 		<div className="navSearch"><input type="text" placeholder="Search books"></input></div>
 		<div className="navAccount">
 			<div className="logInSection">
