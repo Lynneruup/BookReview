@@ -5,10 +5,14 @@ import Navbar from "../Components/Navbar/Navbar";
 export default function RootLayout() {
 	return (
 		<div>
-			<Navbar />
-			<main>
-				<Outlet />
-			</main>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+				<Navbar />
+				<main>
+					<Outlet />
+				</main>
+
+
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		</div>
 	)
 }
