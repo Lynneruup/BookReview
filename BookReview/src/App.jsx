@@ -11,14 +11,14 @@ import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} fr
 import RootLayout from "./layouts/RootLayout.jsx";
 
 // Pages
-import Navbar from "./Components/Navbar/Navbar.jsx";
-import Home from "./Components/Home.jsx"
+import Home from "./Components/Home/Home.jsx"
+import About from "./Components/About/About";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout/>}>
       <Route index element={<Home />}></Route>
-      <Route path="About" element={<Navbar />}></Route>
+      <Route path="About" element={<About />}></Route>
     </Route>
   )
 )
