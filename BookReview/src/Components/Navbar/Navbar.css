@@ -5,7 +5,7 @@
 	background-color:#F4F1EA;;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 8px;
 	height: 60px;
-	font-family: Inter;
+	font-family: Lato;
 	padding: 0em 5em;;
 }
 
@@ -19,12 +19,12 @@
 	width: 192px;
 	height: 37.84px;
 	margin-right: 0px;
-	padding-bottom: 3px;
+	padding-bottom: 0px;
 }
 
 .navSearch {
 	display: flex;
-	margin: 0 3em;
+	margin: 0 1.5em;
 }
 	
 .navSearch input {
@@ -71,11 +71,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 1.5em;
 }
 
 .menuList {
 	display: flex;
-	padding-left: 1em;
+	padding: 0px;
 }
 .menuList a {
 	list-style: none;

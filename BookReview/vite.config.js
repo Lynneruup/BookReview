@@ -2,12 +2,12 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-/*   build: {
+  build: {
     outDir: 'backend/dist',
     rollupOptions: {
       input: {
         main: '/backend/index.html',
       },
     },
-  }, */
+  },
 });
