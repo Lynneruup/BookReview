@@ -15,6 +15,15 @@ mongoose.connect('mongodb://127.0.0.1:27017/bookBase', {useNewUrlParser: true, u
 	console.log(err);
 })
 
+const bookSchema = new mongoose.Schema({
+	title: String,
+	author: String,
+	cover: String,
+	rating: Number,
+})
+const Book = mongoose.model("Book", bookSchema);
+const JP = new Book({title: "12 rules for life", author: "Jordan Peterson", cover: "some thing", rating: 8.9})
+JP.save();
 
 // Static file serving setup
 const __filename = fileURLToPath(import.meta.url);
